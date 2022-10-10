@@ -18,11 +18,17 @@
       <Platform>x64</Platform>
     </ProjectConfiguration>
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="RécupérationSaisie.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RécupérationSaisie.cpp" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>
-    <ProjectGuid>{bb8d4f03-e0e7-4e05-bd3e-b4cbf9601756}</ProjectGuid>
-    <RootNamespace>Tp01c</RootNamespace>
+    <ProjectGuid>{36de0f82-9951-4101-96ee-49a950f6890a}</ProjectGuid>
+    <RootNamespace>RécupérationSaisie</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
@@ -126,9 +132,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Tp01_c++.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>

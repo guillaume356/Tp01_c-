@@ -1,7 +1,8 @@
-#include "ManipulationNombre.hpp"
+
 #include <cstdlib>
 #include <iostream>
 #include <vector>
+#include "ManipulationNombre.hpp"
 using namespace std;
 ///////////////////////////////////////////////////////////////1.1.1///////////////////////
 int Somme(int a, int b)

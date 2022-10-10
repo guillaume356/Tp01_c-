@@ -15,7 +15,12 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Tp01_c++.cpp">
+    <ClInclude Include="RécupérationSaisie.hpp">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="RécupérationSaisie.cpp">
       <Filter>Fichiers sources</Filter>
     </ClCompile>
   </ItemGroup>

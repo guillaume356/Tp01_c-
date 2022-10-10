@@ -1,3 +1,4 @@
+#include "RécupérationSaisie.hpp"
 #include <cstdlib>
 #include <iostream>
 #include <vector>
@@ -7,7 +8,7 @@ using namespace std;
 void PrenomUser()
 {
     string Prenom;
-    std::cout << "Quel est ton prÃ©nom ? : " << std::endl;
+    std::cout << "Quel est ton prénom ? : " << std::endl;
     std::cin >> Prenom;
     std::cout << "Bonjour cher " << Prenom << " !" << std::endl;
 }
@@ -16,7 +17,7 @@ void PrenomNomUser()
 {
     string Prenom;
     string Nom;
-    std::cout << "Quel est ton nom et ton prÃ©nom ? : " << std::endl;
+    std::cout << "Quel est ton nom et ton prénom ? : " << std::endl;
     std::cin >> Nom;
     std::cin >> Prenom;
     std::cout << "Bonjour cher " << Nom << " " << Prenom << " !" << std::endl;
@@ -31,7 +32,7 @@ void JusteNombre()
     std::cout << "Veuillez saisir un nombre entre 0 et 1000 : " << std::endl;
     std::cin >> NbUser;
     if (NbUser == NbSecret) {
-        std::cout << "Alors la felicitation tu as trouvÃ© le nombre secret" << std::endl;
+        std::cout << "Alors la felicitation tu as trouvé le nombre secret" << std::endl;
     }
     else if (NbUser < NbSecret) {
         std::cout << "Le nombre secret est plus grand" << std::endl;
@@ -54,7 +55,7 @@ void JusteNombreEssai()
         std::cin >> NbUser;
         if (NbUser == NbSecret) {
             NbEssais++;
-            std::cout << "Alors la felicitation tu as trouvÃ© le nombre secret en " << NbEssais << " essais" << std::endl;
+            std::cout << "Alors la felicitation tu as trouvé le nombre secret en " << NbEssais << " essais" << std::endl;
         }
         else if (NbUser < NbSecret) {
             NbEssais++;
