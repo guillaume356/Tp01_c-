@@ -36,7 +36,7 @@ void CreerTab(int size, std::vector<int> tab)
     tab.resize(size);
 
 
-    srand(time(0));
+    srand(time(NULL));
     cout << "Voici votre tableau" << endl;
 
     for (std::size_t i = 0; i < size; i++)
@@ -45,7 +45,7 @@ void CreerTab(int size, std::vector<int> tab)
         cout << tab[i] << std::endl;
     }
 
-    cout << "Voulez vous le trier par ordre décroissant [0] ou croissant [1] ?" << endl;
+    cout << "Voulez vous le trier par ordre dÃ©croissant [0] ou croissant [1] ?" << endl;
     cin >> trie;
 
     switch (trie) {
@@ -78,7 +78,7 @@ void CreerTab(int size, std::vector<int> tab)
         break;
     }
 
-    cout << "Voici votre tableau trié" << endl;
+    cout << "Voici votre tableau triÃ©" << endl;
     for (std::size_t i = 0; i < size; i++)
     {
         cout << tab[i] << std::endl;
@@ -102,14 +102,14 @@ int main()
     cout << "Votre nombre vaut " << Somme(a, b) << endl; //Et on l'affiche
 
     Inverse(a, b);
-    cout << "Le nombre a vaut désormais " << a << endl;
-    cout << "Le nombre b vaut désormais " << b << endl;
+    cout << "Le nombre a vaut dÃ©sormais " << a << endl;
+    cout << "Le nombre b vaut dÃ©sormais " << b << endl;
 
     cout << "Entrez un dernier nombre nombre" << endl;
     cin >> c; //On fait entrer un nombre dans cette case
 
     cout << "Votre nombre c vaut avec les pointeurs " << SommePointeur(&a, &b, &c) << endl;
-    cout << "Votre nombre c vaut avec les références " << SommeReference(a, b, c) << endl;
+    cout << "Votre nombre c vaut avec les rÃ©fÃ©rences " << SommeReference(a, b, c) << endl;
 
     cout << "Veuillez entrer une taille de tableau : " << endl;
     cin >> size; //On fait entrer un nombre dans cette case
