@@ -4,7 +4,7 @@
 
 bool  EndGame::Victoire(Grille grille1, int ConditionVictoire) const
 {
-	// Vérifier les lignes
+	// VÃ©rifier les lignes
 	int testCompteurLigne = 0;
 	for (int i = 0; i < grille1.getNbRows(); i++)
 	{
@@ -29,7 +29,7 @@ bool  EndGame::Victoire(Grille grille1, int ConditionVictoire) const
 		}
 	}
 
-	// Vérifier les lignes
+	// VÃ©rifier les lignes
 	int testCompteurColonne = 0;
 	for (int i = 0; i <= grille1.getNbRows() - ConditionVictoire; i++)
 	{
@@ -55,7 +55,7 @@ bool  EndGame::Victoire(Grille grille1, int ConditionVictoire) const
 	}
 
 	int testCompteurDiag1 = 0;
-	// Vérifier la diagonale principale
+	// VÃ©rifier la diagonale principale
 	for (int i = 0; i <= grille1.getNbRows() - ConditionVictoire; i++)
 	{
 		for (int j = 0; j <= grille1.getNbColumns() - ConditionVictoire; j++)
@@ -83,7 +83,7 @@ bool  EndGame::Victoire(Grille grille1, int ConditionVictoire) const
 	//// 
 	//// 
 	////int testCompteurDiag2 = 0;
-	////// Vérifier la diagonale principale
+	////// VÃ©rifier la diagonale principale
 	////for (int i = grille1.getNbRows(); i >= ConditionVictoire; i--)
 	////{
 	////	for (int j = 0; j <= grille1.getNbColumns() - ConditionVictoire; j++)
@@ -104,7 +104,7 @@ bool  EndGame::Victoire(Grille grille1, int ConditionVictoire) const
 
 bool  EndGame::Egalite(Grille grille1) const
 {
-	// Egalité
+	// EgalitÃ©
 	int compteur = 0;
 	for (int i = 0; i < grille1.getNbRows(); i++)
 	{
