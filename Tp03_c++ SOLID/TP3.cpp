@@ -20,6 +20,14 @@ int main()
         std::cout << "1 - Morpion " << std::endl;
         std::cout << "2 - Puissance 4" << std::endl;
         std::cin >> MenuChoix;
+        
+         if (std::cin.fail())
+        {
+            std::cin.clear(); // Réinitialise l'état de l'opérateur de flux
+            
+            std::cout << "Vous n'avez pas entré un nombre valide pour le menu." << std::endl;
+            return 0;
+        }
 
         //Morpion
         if (MenuChoix == 1)
